@@ -1,0 +1,97 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+
+.header{
+    background-color: #222831;
+    color: beige;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navigation{
+    display: flex;
+    padding-right: 5%;
+}
+
+.navlink{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.abovefold{
+    background-image: url("header.jpg");
+    background-size: cover;
+    color: beige;
+    padding: 5%;
+}
+
+.headingdiv{
+    width: 50%
+}
+
+.featuresblock{
+    background-color: #2a2d33;
+    color: beige;
+    padding: 5%;
+    text-align: center;
+}
+
+.features{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.featurespics{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.featureopt{
+    background-color: #404347;
+    color: beige;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.benefits{
+    background-color: #233044;
+    color: beige;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: beige;
+    color:#222831;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.infoblock{
+    display: flex;
+}
+
+.infopic{
+    background-color: #2a2d33;
+    width: 50%;
+    padding: 5%
+}
+
+.info{
+    background-color: #404347;
+    color: beige;
+    width: 50%;
+    padding: 5%;
+}
