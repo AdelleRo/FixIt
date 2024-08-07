@@ -3,7 +3,6 @@ body{
     margin: 0;
 }
 
-
 .header{
     background-color: #222831;
     color: beige;
@@ -14,7 +13,8 @@ body{
 
 .navigation{
     display: flex;
-    padding-right: 5%;
+    flex-wrap: wrap;
+    padding-right: 10px;
 }
 
 .navlink{
@@ -25,12 +25,14 @@ body{
 .abovefold{
     background-image: url("header.jpg");
     background-size: cover;
-    color: beige;
+    color: #ff914d;
     padding: 5%;
+    height: 200px;
 }
 
 .headingdiv{
-    width: 50%
+    width: 50%;
+    height: 100px;
 }
 
 .featuresblock{
