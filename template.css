@@ -260,7 +260,6 @@ h2{
 
 
 
-
 /*about page*/
 
 .navandheaderap{
@@ -591,4 +590,29 @@ h2{
     height: 300px;
     text-align: center;
     align-content: center;
+}
+
+
+
+/*Cart page:*/
+.cartbody{
+    background-color: #ff914d;
+    height: 100vh;
+    padding: 6%;
+}
+
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartitems{
+    width: 50vw;
+    background-color:#8d5634;
+    display: flex;
+}
+
+.carttotal{
+    width: 30vw;
+    background-color:rgba(141, 86, 52, 0.7);
 }
