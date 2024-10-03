@@ -1,0 +1,594 @@
+/*home page*/
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    background-color: black;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22pt;
+}
+
+.nav{
+    background-color: rgba(56,56,56,0.95);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    width: 50px;
+    padding-left: 20px;
+}
+
+.navandheaderhp{
+    background-image: url("images/header01.jpg");
+    background-size: cover;
+    height: 70vh;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 40px;
+    align-content: center;
+}
+
+.navlink{
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #ff914d;
+}
+
+.abovefold{
+    color: #ff914d;
+    padding: 100px 50px 50px 50px;
+    height: fit-content;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.headingdiv{
+    margin-top: 10%;
+    width: 45%;
+}
+
+.categorylink{
+    text-decoration: none;
+}
+  
+.featuredblock{
+    background-color: #ff914d;
+    color: #1d2f47;
+    padding: 5%;
+    text-align: center;
+}
+
+.featured{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.featuredpics{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.featureopt{
+    background-color: rgba(141, 86, 52, 0.7);
+    color: #1d2f47;
+    margin: 10px;
+    padding: 15px 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(56,56,56,0.5);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.featureopt:hover{
+    box-shadow: 0px 8px 16px 0px rgba(56,56,56,0.5);
+}
+
+.featuredimg{
+    width: 95%;
+    border-radius: 10px;
+}
+
+.proftools{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    color: #ff914d;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.proftoolstext{
+    margin-bottom: 40px;
+}
+
+.pwtbtn{
+    text-decoration: none;
+    background-color: #ff914d;
+    color:#1d2f47;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.pwtbtn:hover{
+    background-color: rgba(255, 145, 77, 0.8);
+}
+
+.aboutblock{
+    display: flex;
+    background-color: #ff914d;
+}
+
+.aboutpic{
+    padding: 5% 0% 5% 5%;
+    width: 40%;
+    margin: auto;
+}
+
+.aboutimg{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about{
+    color: #1d2f47;
+    padding: 3% 5% 5% 5%;
+    width: 45%;
+    margin: 0px;
+    text-align: center;
+}
+
+.abouth{
+    text-align: center;
+}
+
+.aboutp{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.lmbtn{
+    text-decoration: none;
+    background-color: rgba(141, 86, 52, 0.7);
+    color:#1d2f47;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.lmbtn:hover{
+    background-color: #8d5634;
+}
+
+.footer{
+    background-color: #383838;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.footerlogo{
+    height: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.line{
+    width: 90%;
+    height: 2px;
+    background-color: #8d5634 ;
+    margin-bottom: 10px;
+}
+
+.footerlink{
+    text-decoration: none;
+    color: #ff914d;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.footerlink:hover{
+    text-decoration: underline;
+}
+
+
+
+/*media queries for homepage*/
+@media screen and (max-device-width: 700px){
+    .navlink{
+        cursor:default;
+        pointer-events: none;
+    }
+    .headingdiv{
+        width: 100%;
+    }
+    .featuredpics{
+        flex-direction: column;
+    }
+    .aboutblock{
+        flex-direction: column;
+    }
+    .aboutpic{
+        width: 100%;
+        padding: 0;
+    }
+    .aboutimg{
+        border-radius: 0;
+    }
+    .about{
+        width: 90%;
+        padding: 5%;
+    }
+    .aboutp{
+        text-align: center;
+    }
+    .footerlink{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*about page*/
+
+.navandheaderap{
+    background-image: url('images/aboutp.jpeg');
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+.headerap{
+    background-color: rgba(56,56,56,0.7);
+    color: #ff914d;
+    padding: 30px;
+    height: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    margin: 15% 5%;
+    border-radius: 5%;
+}
+
+.teamap{
+    background-color: #ff914d;
+    text-align: center;
+    color: #1d2f47;
+    padding: 5% 12%;
+}
+
+.imgap{
+    background-image: url("images/gears.jpg");
+    background-size: cover;
+    height: 300px;
+}
+
+.goalsap{
+    background-color: #ff914d;
+    text-align: center;
+    color: #1d2f47;
+    padding: 5% 12%;
+}
+
+
+
+/*media queries for aboutpage*/
+@media screen and (max-device-width: 1000px){
+    .headerap{
+        align-self: center;
+    }
+    .teamap{
+        text-align: left;
+    }
+    .imgap{
+        background-image: url("images/gearsphone.jpg");
+        background-size: cover;
+        height: 300px;
+    }
+    .goalsap{
+        text-align: left;
+    }
+
+}
+
+
+
+/*Wood page*/
+.navandheaderwoodp{
+    background-image: url('images/woodbackground.jpg');
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+.headerwoodp{
+    color: #ff914d;
+    padding: 30px;
+    height: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    margin: 15% 5%;
+}
+
+
+/*Paints page*/
+.navandheaderpaintsp{
+    background-image: url('images/orangeblackpaint.jpg');
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+/*Tools page*/
+.navandheadertoolsp{
+    background-image: url('images/toolsheader.jpg');
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+
+
+/*display of products*/
+
+.bodyproduct{
+    background-color:#ff914d;
+    padding: 30px;
+}
+
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.productcard{
+    background-color: rgba(141, 86, 52, 0.7);
+    color: #1d2f47;
+    margin: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(56,56,56,0.5);
+    transition: 0.3s;
+    text-decoration: none;
+    width: 20vw;
+}
+
+.productlink{
+    text-decoration: none;
+    color:#1d2f47;
+}
+
+.productcard:hover{
+    box-shadow: 0px 8px 16px 0px rgba(56,56,56,0.5);
+}
+
+.cardimg{
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+/*display of single product page*/
+.navnobg{
+    background-color: rgba(56,56,56,1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.productcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#ff914d;
+    padding-top: 70px;
+}
+
+.productimgframe{
+    background-image: url('images/texture.jpg');
+    background-size: cover;
+    padding: 25px;
+    width: 35%;
+}
+
+.productimg{
+    width: 100%;
+}
+
+.productinfo{
+    color: #1d2f47;
+    padding: 5%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.producth{
+    text-align: center;
+}
+
+.productp{
+    text-align: center;
+}
+
+.priceaddtocart{
+    display:flex;
+}
+
+
+
+/*Media queries for product pages (wood, paint, tools)*/
+
+@media screen and (max-device-width: 800px){
+    .productcard{
+        min-width: 25vw;
+    }
+}
+
+@media screen and (max-device-width: 600px){
+    .productcard{
+        min-width: 35vw;
+    }
+}
+
+
+
+
+
+/*Powertools page*/
+.navandheaderpwp{
+    background-image: url('images/powertoolheader.jpg');
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+.headerpwp{
+    color: #ff914d;
+    padding: 30px;
+    height: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    margin: 15% 5%;
+}
+
+.bodypowertools{
+    background-image: url('images/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+
+.powertoolcard{
+    background-color: rgba(255, 145, 77, 0.8);
+    color: #1d2f47;
+    margin: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(56,56,56,0.5);
+    transition: 0.3s;
+    text-decoration: none;
+    width: 20vw;
+}
+
+
+
+
+/*Categories page*/
+.navandheadercp{
+    background-image: url('images/shopheader.jpg');
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+.headercp{
+    color: #ff914d;
+    padding: 30px;
+    height: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    margin: 15% 5%;
+    text-shadow: 2px 2px 4px #383838;
+}
+
+.shopbody{
+    background-image: url('images/texture.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+}
+
+.maincategories{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.categorypaintpic{
+    background-image: url('./images/paint.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47vw;
+    margin: 10px;
+    height: 300px;
+}
+
+.categorywoodpic{
+    background-image: url('./images/planks.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47vw;
+    margin: 10px;
+    height: 300px;
+}
+
+.categorytoolspic{
+    background-image: url('./images/toolhandles.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47vw;
+    margin: 10px;
+    height: 300px;
+}
+
+.categorypwtpic{
+    background-image: url('./images/powertool.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47vw;
+    margin: 10px;
+    height: 300px;
+}
+
+.categoryname{
+    color:#ff914d;
+    background-color: rgba(56,56,56,0.6);
+    height: 300px;
+    text-align: center;
+    align-content: center;
+}
