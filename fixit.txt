@@ -3,3 +3,5 @@ brown #8d5634  rgba(141, 86, 52, 0.7)
 blue #1d2f47 rgba(29, 47, 71, 1)
 black #000000
 grey #383838
+
+repo instead of origin!
