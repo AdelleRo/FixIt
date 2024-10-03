@@ -15,6 +15,10 @@ h2{
     font-size: 22pt;
 }
 
+h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .nav{
     background-color: rgba(56,56,56,0.95);
     display: flex;
@@ -404,7 +408,7 @@ h2{
 
 /*display of single product page*/
 .navnobg{
-    background-color: rgba(56,56,56,1);
+    background-color: rgba(56,56,56,0.95);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -452,6 +456,9 @@ h2{
 
 .priceaddtocart{
     display:flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 30%;
 }
 
 
@@ -598,21 +605,84 @@ h2{
 .cartbody{
     background-color: #ff914d;
     height: 100vh;
-    padding: 6%;
+    padding: 5% 15%;
+    color: #1d2f47;
+    display: flex;
+    flex-direction: column;
 }
 
-.cart{
+.cartitem{
     display: flex;
     flex-wrap: wrap;
+    background-color:rgba(141, 86, 52, 0.65);
+    margin-bottom: 7px;
+    align-items:flex-start;
+    border-radius: 7px;
+    text-align: center;
 }
 
-.cartitems{
-    width: 50vw;
-    background-color:#8d5634;
+.imgdiv{
+    padding: 5px;
     display: flex;
+    justify-self: center;
 }
 
-.carttotal{
-    width: 30vw;
-    background-color:rgba(141, 86, 52, 0.7);
+.itemimg{
+    max-width: 100px;
+    border-radius: 7px;
+}
+
+.itemname{
+    width: 30%;
+    height: 100%;
+    align-content: center;
+    padding: 0px 30px;
+    text-align: left;
+}
+
+.itemamount{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemtotal{
+    width: 23%;
+    height: 100%;
+    align-content: center;
+    padding: 0px 30px;
+}
+
+.hovered-over:hover{
+    cursor: pointer;
+}
+
+.deletefromcart{
+    width: 5%;
+    height: 100%;
+    align-content: center;
+    padding: 0px 30px;
+}
+
+.delete-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.cartline{
+    width: 100%;
+    height: 4px;
+    background-color: #8d5634;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.button{
+    width: 110px;
+    height: 50px;
+    border-radius: 20px;
 }
