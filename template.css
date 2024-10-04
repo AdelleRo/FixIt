@@ -294,6 +294,7 @@ h3{
 .imgap{
     background-image: url("images/gears.jpg");
     background-size: cover;
+    background-position: center;
     height: 300px;
 }
 
@@ -307,7 +308,7 @@ h3{
 
 
 /*media queries for aboutpage*/
-@media screen and (max-device-width: 1000px){
+@media screen and (max-device-width: 650px){
     .headerap{
         align-self: center;
     }
@@ -316,14 +317,28 @@ h3{
     }
     .imgap{
         background-image: url("images/gearsphone.jpg");
-        background-size: cover;
-        height: 300px;
+        background-position: center;
+        height: 150px;
+        width: 100%;
     }
     .goalsap{
         text-align: left;
     }
-
 }
+
+@media screen and (min-device-width: 650px) and (max-device-width: 1030px){
+    .imgap{
+        background-image: url("images/gearsphone.jpg");
+        background-position: center;
+        height: 250px;
+        width: 100%;
+    }
+    .navandheaderap{
+        height: 35vh;
+    }
+}
+
+
 
 
 
