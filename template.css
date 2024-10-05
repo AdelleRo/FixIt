@@ -367,12 +367,13 @@ h3{
 .navandheaderwoodp{
     background-image: url('images/woodbackground.jpg');
     background-size: cover;
+    background-position: center;
     height: 70vh;
     width: 100%;
     display: flex;
 }
 
-.headerwoodp{
+.headerproductsp{
     color: #ff914d;
     padding: 30px;
     height: fit-content;
@@ -380,11 +381,16 @@ h3{
     margin: 15% 5%;
 }
 
+.headerorangebg{
+    background-color: rgba(56,56,56,0.7);
+}
+
 
 /*Paints page*/
 .navandheaderpaintsp{
     background-image: url('images/orangeblackpaint.jpg');
     background-size: cover;
+    background-position: center;
     height: 70vh;
     width: 100%;
     display: flex;
@@ -394,11 +400,11 @@ h3{
 .navandheadertoolsp{
     background-image: url('images/toolsheader.jpg');
     background-size: cover;
+    background-position: center;
     height: 70vh;
     width: 100%;
     display: flex;
 }
-
 
 
 /*display of products*/
@@ -501,15 +507,33 @@ h3{
 
 /*Media queries for product pages (wood, paint, tools)*/
 
+@media screen and (max-device-width: 330px){
+    .productcard{
+        min-width: 65vw;
+    }
+}
+
+@media screen and (max-device-width: 680px){
+    .productcard{
+        min-width: 35vw;
+    }
+}
+
 @media screen and (max-device-width: 800px){
     .productcard{
         min-width: 25vw;
     }
+    .headerproductsp{
+        margin-top: 30vh;
+    }
 }
 
-@media screen and (max-device-width: 600px){
-    .productcard{
-        min-width: 35vw;
+@media screen and (min-device-width: 800px) and (max-device-width: 1030px){
+    .navandheaderproductsp{
+        height: 45vh;
+    }
+    .headerproductsp{
+        margin-top: 17vh;
     }
 }
 
@@ -740,6 +764,9 @@ h3{
 }
 
 @media screen and (max-device-width: 350px){
+    .cartheading{
+        padding-top: 5vh;
+    }
     .itemname{
         width: 40vw;
     }
@@ -759,7 +786,7 @@ h3{
 
 @media screen and (max-device-width: 600px){
     .cartbody{
-        padding: 20% 5%;
+        padding: 20% 3%;
     }
     .itemname{
         padding: 0px 5px;
