@@ -198,10 +198,13 @@ h3{
     padding: 15px;
 }
 
-.footerlogo{
-    height: 100px;
+.footerlogodiv{
     padding-left: 40vw;
     padding-right: 40vw;
+}
+
+.footerlogo{
+    height: 100px;
 }
 
 .line{
@@ -232,7 +235,7 @@ h3{
         background-position: center;
     }
     .abovefold{
-        padding-top: 35vh;
+        padding-top: 25vh;
     }
     .headingdiv{
         width: 100%;
@@ -262,11 +265,8 @@ h3{
 }
 
 @media screen and (min-device-width: 650px) and (max-device-width: 1030px){
-    .navandheaderhp{
-        height: 45vh;
-    }
     .abovefold{
-        padding-top: 15vh;
+        padding-top: 25vh;
     }
     .headingdiv{
         width: 60%;
@@ -351,11 +351,8 @@ h3{
         height: 250px;
         width: 100%;
     }
-    .navandheaderap{
-        height: 45vh;
-    }
     .headerap{
-        margin-top: 15vh;
+        margin-top: 20vh;
     }
 }
 
@@ -480,6 +477,56 @@ h3{
 }
 
 
+
+/*Media queries for product pages (wood, paint, tools, powertools)*/
+
+@media screen and (max-device-width: 330px){
+    .productcard{
+        min-width: 70vw;
+    }
+    .powertoolcard{
+        min-width: 70vw;
+    }
+    .headerproductsp{
+        margin-top: 20vh;
+    }
+}
+
+@media screen and (min-device-width: 330px) and (max-device-width: 680px){
+    .productcard{
+        min-width: 35vw;
+    }
+    .powertoolcard{
+        min-width: 35vw;
+    }
+    .headerproductsp{
+        margin-top: 25vh;
+    }
+}
+
+@media screen and (min-device-width: 680px) and (max-device-width: 800px){
+    .productcard{
+        min-width: 25vw;
+    }
+    .powertoolcard{
+        min-width: 25vw;
+    }
+    .headerproductsp{
+        margin-top: 25vh;
+    }
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1030px){
+    .headerproductsp{
+        margin-top: 20vh;
+    }
+    .headerpwp{
+        margin-top: 17vh;
+    }
+}
+
+
+
 /*display of single product page*/
 .navnobg{
     background-color: rgba(56,56,56,0.95);
@@ -492,22 +539,19 @@ h3{
     width: 100%;
 }
 
-.productbody{
-    height: 100vh;
-    background-color:#ff914d;
-}
-
 .productcontainer{
+    background-color: #ff914d;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 70px;
+    padding-top: 72px;
+    justify-content: center;
+    height: 100%;
 }
 
 .productimgframe{
-    background-image: url('images/texture.jpg');
-    background-size: cover;
-    padding: 25px;
-    width: 35%;
+    align-content: center;
+    padding: 10px;
+    max-width: 35%;
 }
 
 .productimg{
@@ -536,58 +580,24 @@ h3{
     display:flex;
     margin-top: 30px;
     justify-content: space-between;
-    width: 30%;
+    width: 25vw;
 }
 
 
+/*Media queries for single product page*/
+@media screen and (max-device-width: 430px){
 
-/*Media queries for product pages (wood, paint, tools, powertools)*/
-
-@media screen and (max-device-width: 330px){
-    .productcard{
-        min-width: 70vw;
-    }
-    .powertoolcard{
-        min-width: 70vw;
-    }
-    .headerproductsp{
-        margin-top: 30vh;
-    }
 }
 
-@media screen and (min-device-width: 330px) and (max-device-width: 680px){
-    .productcard{
-        min-width: 35vw;
+@media screen and (max-device-width: 740px){
+    .productimgframe{
+        min-width: 50%;
     }
-    .powertoolcard{
-        min-width: 35vw;
+    .productinfo{
+        width: 80%;
     }
-    .headerproductsp{
-        margin-top: 30vh;
-    }
-}
-
-@media screen and (min-device-width: 680px) and (max-device-width: 800px){
-    .productcard{
-        min-width: 25vw;
-    }
-    .powertoolcard{
-        min-width: 25vw;
-    }
-    .headerproductsp{
-        margin-top: 30vh;
-    }
-}
-
-@media screen and (min-device-width: 800px) and (max-device-width: 1030px){
-    .navandheaderproductsp{
-        height: 45vh;
-    }
-    .headerproductsp{
-        margin-top: 17vh;
-    }
-    .headerpwp{
-        margin-top: 17vh;
+    .priceaddtocart{
+        width: 55vw;
     }
 }
 
@@ -605,7 +615,7 @@ h3{
 
 .headercp{
     color: #ff914d;
-    padding: 25vh 5vh 5vh 5vh;
+    padding: 10vh 0 0 0;
     height: fit-content;
     font-family:'Times New Roman', Times, serif;
     margin: 15% 5%;
@@ -690,8 +700,7 @@ h3{
 /*Cart page:*/
 .cartbody{
     background-color: #ff914d;
-    height: 100vh;
-    padding: 5% 15%;
+    padding: 10% 15%;
     color: #1d2f47;
     display: flex;
     flex-direction: column;
@@ -699,24 +708,25 @@ h3{
 
 .cartitem{
     display: flex;
-    flex-wrap: wrap;
     background-color:rgba(141, 86, 52, 0.65);
     margin-bottom: 7px;
     align-items: flex-start;
     border-radius: 7px;
     text-align: center;
+    height: 10vh;
 }
 
 .imgdiv{
-    padding: 5px;
+    padding-left: 5px;
     display: flex;
-    justify-self: center;
+    align-content: center;
+    height: 100%;
 }
 
 .itemimg{
-    max-width: 100px;
-    height: 70px;
     border-radius: 7px;
+    align-self: center;
+    height: 80%;
 }
 
 .itemname{
@@ -842,5 +852,17 @@ h3{
     }
     .itemtotal{
         width: 12%;
+    }
+}
+
+
+
+/*Media queries to change nav menu for smaller screens*/
+@media screen and (max-device-width: 580px){
+    .homelink{
+        display: none;
+    }
+    .aboutlink{
+        display: none;
     }
 }
